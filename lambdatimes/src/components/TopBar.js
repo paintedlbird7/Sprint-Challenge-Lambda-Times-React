@@ -60,8 +60,47 @@ flex-direction: row;
 flex: 1;
 font-size: 11px;
 `
-
-
+const Topbardiv4 = styled.div`
+cursor: pointer;
+margin-right: 25%;
+font-weight: bold;
+`
+const Topbardiv5 = styled.div`
+.top-bar .container .container-center {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex: 3;
+font-size: 9px;
+`
+const Topbardiv6 = styled.div`
+.top-bar .container .container-center span {
+cursor: pointer;
+margin-right: 5%;
+`
+const Topbardiv7 = styled.div`
+.top-bar .container .container-center span:last-child {
+margin-right: 0;
+`
+const Topbardiv8 = styled.div`
+.top-bar .container .container-center span:hover {
+text-decoration: underline;
+`
+const Topbardiv9 = styled.div`
+.top-bar .container .container-right {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+flex-direction: row;
+flex: 1;
+font-size: 11px;
+font-weight: bold;
+`
+const Topbardiv10 = styled.div`
+.top-bar .container .container-right span {
+cursor: pointer;
+`
 
 
 export default TopBar;
