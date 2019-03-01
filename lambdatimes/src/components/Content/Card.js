@@ -1,5 +1,7 @@
 import React from 'react';
-import ProtoTypes from 'proto-types;'
+// import ProtoTypes from 'proto-types;'
+import PropTypes from 'prop-types'
+
 
 
 const Card = props => {
