@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types'
+
 
 const Tab = props => {
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
@@ -17,6 +19,18 @@ const Tab = props => {
   );
 };
 
+
+
 // Make sure you include PropTypes on your props.
+Tab.propTypes = {
+  tab: PropTypes.arrayOf(
+    PropTypes.shape({
+  headline: PropTypes.string.isRequired,
+  author:PropTypes.number.isRequired,
+  img: PropTypes.string.isRequired,
+  tab: PropTypes.string.isRequired,
+    })
+  )
+  }
 
 export default Tab;
