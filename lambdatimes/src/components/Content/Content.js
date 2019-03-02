@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Tabs from './Tabs';
 import Cards from './Cards';
 import PropTypes from 'prop-types'
+import Tab from '../Content/Tab'
 
 
 // Importing our tab and card data. No need to change anything here.
@@ -82,7 +83,7 @@ export default class Content extends Component {
         {/* <selectTabHandler /> */}
         <Tabs 
         tabs={this.state.tabs} 
-        tabs={this.state.selected} 
+        selectedtab={this.state.selected} 
 
         selectTabHandler={this.changeSelected}
 
