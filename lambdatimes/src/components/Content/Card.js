@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 
 const Card = props => {
   const {headline, author, img} = props.card;
+ 
   return (
     <div className="card">
       <div className="headline">{headline}</div>

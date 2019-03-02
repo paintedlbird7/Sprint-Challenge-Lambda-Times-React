@@ -37,14 +37,19 @@ const Tabs = props => {
 
 // Make sure to use PropTypes to validate your types!
 Tabs.propTypes = {
-  tabs: PropTypes.arrayOf(
-    PropTypes.shape({
-  headline: PropTypes.string.isRequired,
-  author:PropTypes.number.isRequired,
-  img: PropTypes.string.isRequired,
-  tab: PropTypes.string.isRequired,
-    })
-  )
-  }
+  tabs: PropTypes.arrayOf(PropTypes.string),
+  selectedTab: PropTypes.string.isRequired,
+  selectTabHandler: PropTypes.func.isRequired,
+}
+// Tabs.propTypes = {
+//   tabs: PropTypes.arrayOf(
+//     PropTypes.shape({
+//   headline: PropTypes.string.isRequired,
+//   author:PropTypes.number.isRequired,
+//   img: PropTypes.string.isRequired,
+//   tab: PropTypes.string.isRequired,
+//     })
+//   )
+//   }
 
 export default Tabs;
